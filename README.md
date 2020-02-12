@@ -148,10 +148,10 @@ In anoher terminal, change the directory to go to "self_driving_car_control" fol
 
 **Ubuntu:**
 ```
-python3 carla_client.py
+$ python3 carla_client.py
 ```
 
 **Windows**
 ```
-python carla_client.py
+\> python carla_client.py
 ```
