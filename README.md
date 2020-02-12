@@ -1,8 +1,10 @@
 # Installing CARLA Simulator
 ## Prerequisites
 Following you can find the download links for CARLA Simulator:
-[Ubuntu 16.04 or later]()
-[Windows 7 or higher]()
+
+[Ubuntu 16.04 or later](https://drive.google.com/open?id=1XCn2p4viNAePTIMfoJEaIpCQzC6bS-nN)
+
+[Windows 7 or higher](https://drive.google.com/open?id=1NsCA3vFCQeeY1WtWp5XEKjCnXK_vZyiP)
 
 ### Hardware
 Recommended hardware specifications (from the [Unreal Engine 4 Wiki](https://wiki.unrealengine.com/Recommended_Hardware#Recommended))
