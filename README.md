@@ -28,13 +28,13 @@ If your network does not provide access to port 2000, you may change which ports
 
 The CARLA python client runs on ​[Python 3.5.x or Python 3.6.x](https://www.python.org/downloads/) (x is any number).Python 3.7 is not compatible with CARLA​. Note that it is assumed that ​pip​ is installed along with the installation of Python.
 
-The setup guide uses the command ​python3​ to load all of its python clients. Makesure that the commands ​`python3`​ and ​`pip​` exists in `​/usr/bin`​, so they are readily accessible via terminal.
+The setup guide uses the command ​python3​ to load all of its python clients. Make sure that the commands ​`python3`​ and ​`pip​` exists in `​/usr/bin`​, so they are readily accessible via terminal.
 
 To check that ​python3​ points to the correct version, run the following bash commandin terminal:
 ```
 $ python3 --version
 ```
-It should return `​Python 3.5.x`​ or `​Python 3.6.x`​, as these are the versions supportedby this version of CARLA.
+It should return `​Python 3.5.x`​ or `​Python 3.6.x`​, as these are the versions supported by this version of CARLA.
 
 Check whether pip is installed for Python 3.5 or Python 3.6
 ```
@@ -44,7 +44,7 @@ It should return with the pip version, as well as the Python version that it poi
 
 ### Preparing the CARLA Simulator
 #### Download and Extract CARLA Simulator
-1. Download the CARLA simulator ([​CarlaUE4Ubuntu.tar.gz​](#Prerequisites)) found on the linked mentioned above. Note that this may take a while as the simulator file is several gigabytes in size.
+1. Download the CARLA simulator ([​CarlaUE4Ubuntu.tar.gz​](#Prerequisites)) found in the link mentioned above. Note that this may take a while as the simulator file is several gigabytes in size.
 
 2. Extract the contents of `​CarlaUE4Ubuntu.tar.gz`​ to any working directory. The extraction will create a folder named ​CarlaSimulator​ in the working directory, which hosts the CARLA server and client files required for the project.
 
@@ -52,7 +52,8 @@ It should return with the pip version, as well as the Python version that it poi
 
     Continue with this step for extraction instructions, otherwise skip to the next step.
 
-    **Ubuntu GUI method:**
+    **Ubuntu GUI method**
+    
     Copy the ​`CarlaUbuntuUE4.tar.gz` ​file to the ​`opt​ `directory found under the homefolder. Create the `​opt` ​directory if it does not exist.
 
     Right click and extract the file contents into the current (​`opt`​) directory by clicking `Extract Here...​.`
@@ -66,13 +67,12 @@ It should return with the pip version, as well as the Python version that it poi
     $ tar -xzf CarlaUE4Ubuntu.tar.gz --directory $HOME/opt
     ```
 #### Install Python Dependencies for Client
-The CARLA Simulator client files requires additional dependencies to be installed, which aredetailed inside the ​`$HOME​/opt/CarlaSimulator/requirements.txt`​ file.
+The CARLA Simulator client files requires additional dependencies to be installed, which are detailed inside the ​`$HOME​/opt/CarlaSimulator/requirements.txt`​ file.
 
-To install these dependencies for your current user, run the following commands in terminal(you will need to be connected to the internet for this to work). ​Make sure that the version that `python3`​ points to is the correct [version](#python-ubuntu)​.
+To install these dependencies for your current user, run the following commands in terminal (you will need to be connected to the internet for this to work). ​Make sure that the version that `python3`​ points to is the correct [version](#python-ubuntu)​.
 ```
 $ python3 -m pip install -r ​$HOME​/opt/CarlaSimulator/requirements.txt --user
 ```
-
 There should be a `​Successfully installed ...`​ or ​`Requirement already satisfied` message at the end of the installation process when all of the requirements are successfully installed.
 
 ## Setup for Windows
@@ -80,11 +80,11 @@ There should be a `​Successfully installed ...`​ or ​`Requirement already 
 CARLA requires networking enabled with the firewall allowing access to the CARLAloader, and by default [​port 2000, 2001 and 2002​](https://carla.readthedocs.io/en/stable/connecting_the_client/) (TCP and UDP) available on thenetwork. When you first run CARLA in server mode, Windows will prompt you to allow the application to access these ports if they are not ​already accessible​ on your system.
 
 ### Python Windows
-The CARLA python client runs on [​Python 3.5.x or Python 3.6.x​](https://www.python.org/downloads/) (x is any number).Python 3.7 is not currently compatible with CARLA​. Note that it is assumed thatpip​ is installed along with the installation of Python.
+The CARLA python client runs on [​Python 3.5.x or Python 3.6.x​](https://www.python.org/downloads/) (x is any number).Python 3.7 is not currently compatible with CARLA​. Note that it is assumed that pip​ is installed along with the installation of Python.
 
 The setup guide uses the command ​`python​` to load all of its Python clients.
 
-To check that `​python​` points to the correct version, run the following bash commandin terminal:
+To check that `​python​` points to the correct version, run the following bash command in terminal:
 ```
 \> python --version
 ```
@@ -98,17 +98,58 @@ It should return with the pip version, as well as the Python version that it poi
 
 ### Preparing the CARLA Simulator
 #### Download and Extract CARLA Simulator
-1. Download the CARLA simulator (​CarlaUE4Windows.zip​) found in the reading page.Note that this may take a while as the simulator file is several gigabytes in size.
+1. Download the CARLA simulator (​CarlaUE4Windows.zip​) found in the reading page. Note that this may take a while as the simulator file is several gigabytes in size.
 
-2. Extract the contents of ​[CarlaUE4Windows.zip](#Prerequisites)​ to any working directory. Theextraction will create a folder named ​CarlaSimulator​ in the working directory, which hosts the CARLA server and client files required for the project.
+2. Extract the contents of ​[CarlaUE4Windows.zip](#Prerequisites)​ to any working directory. The extraction will create a folder named ​CarlaSimulator​ in the working directory, which hosts the CARLA server and client files required for the project.
 
     The guide assumes the simulator is extracted to ​`C:\CarlaSimulator​`.​ If `C:`​ is unavailable, you may replace ​`C:`​ with any other drive (for example ​`D:`​)
 
-#### Install Python Deoendencies for Client
+#### Install Python Dependencies for Client
 The CARLA Simulator client files requires additional dependencies to be installed, which are detailed inside the ​`C:\CarlaSimulator\requirements.txt`​ file.
 
-To install these dependencies for your current user, run the following commands in terminal(you will need to be connected to the internet for this to work). ​Make sure that the versionthat ​python​ points to is the correct [version](#python-windows).
+To install these dependencies for your current user, run the following commands in terminal (you will need to be connected to the internet for this to work). ​Make sure that the versionthat ​python​ points to is the correct [version](#python-windows).
 ```
 \> python -m pip install -r C:\CarlaSimulator\requirements.txt --user
 ```
-There should be a ​`Successfully installed ...`​ or ​`Requirement already satisfied` message at the end of the installation process when all of the requirements are successfullyinstalled.
+There should be a ​`Successfully installed ...`​ or ​`Requirement already satisfied` message at the end of the installation process when all of the requirements are successfully installed.
+
+# Self-Driving Car Controller
+Download the project by running the following commands:
+
+**Ubuntu**
+Navigate to the folder `$HOME/opt/CarlaSimulator/PythonClient` in the terminal and run the following command:
+```
+$ git clone https://github.com/shiru28/self_driving_car_control.git
+```
+
+**Windows**
+```
+\> cd C:\CarlaSimulator\PythonClient
+\> git clone https://github.com/shiru28/self_driving_car_control.git
+```
+
+## Run CARLA Simulator
+**Ubuntu:**
+Navigate to the folder `$HOME/opt/CarlaSimulator` in the terminal and run the following command:
+```
+$ ./CarlaUE4.sh /Game/Maps/RaceTrack -windowed -carla-server -benchmark -fps=30
+```
+
+**Windows:**
+```
+\> cd C:\CarlaSimulator
+\> CarlaUE4.exe /Game/Maps/RaceTrack -windowed -carla-server -benchmark -fps=30
+```
+
+## Run Controller
+In anoher terminal, change the directory to go to "self_driving_car_control" folder, under the "PythoClient" folder and run the following command:
+
+**Ubuntu:**
+```
+python3 carla_client.py
+```
+
+**Windows**
+```
+python carla_client.py
+```
